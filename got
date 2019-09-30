@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Running Git Commit & Push Script" 
+
+dateTime="$(date)"
+
+git add .
+git commit -m "${dateTime}"
+git push origin master
+
+echo "Finished Script - Pushed new code to remote."
