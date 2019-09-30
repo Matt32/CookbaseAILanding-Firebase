@@ -63,9 +63,8 @@
         function pushEmail(){
          var email = document.getElementById("Enter_Email_Input").value; 
          var ref = firebase.database().ref('/emails');   
-         var obj = { email: email }; 
-         ref.push(obj);
-        document.getElementById("Enter_Email_Input").value = ''; 
+         ref.push(email);
+         document.getElementById("Enter_Email_Input").value = ''; 
         }
       </script>
 
